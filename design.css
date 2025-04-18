@@ -1,0 +1,338 @@
+html{
+    background: linear-gradient(-45deg, #11132c, #111927, #050d1f, #1b1f2a);
+    background-size: 400% 400%;
+    animation: gradientMove 5s ease infinite;
+    color: white;
+    font-family: 'Poppins', sans-serif;  
+}
+  
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+.r1c1-box1 {
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+.r1c1-box1:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+.profile{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.name{
+    margin-left: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 37px;
+}
+
+.intro{
+    margin-top: 1.5rem;
+    text-align: left;
+    margin-left: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.profile-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 3rem;
+}
+
+.profile-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
+    transition: all 0.5s ease;
+    animation: pulseProfile 4s ease-in-out infinite;
+  }
+  
+  @keyframes pulseProfile {
+    0% { box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); }
+    50% { box-shadow: 0 0 25px rgba(0, 180, 216, 0.7); }
+    100% { box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); }
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    border: 3px solid var(--accent-quaternary);
+  }
+
+.upper-box{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-row1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-row1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sub-col1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-col1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.sub-col2-row1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sub-col2-row1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.sub-col2-row2{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-col2-row2:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.box1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.box1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.box2{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.box2:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.box3{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.box3:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.c2-box1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c2-box1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.c2-box2{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c2-box2:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.exp-box{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);   
+}
+
+.exp-box:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.pr-box3{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pr-box3:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.pr-box4{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pr-box4:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.col3-box1{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.col3-box1:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.col3-box2{
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.col3-box2:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Navigation hover effect for "All", "About", "Work" links */
+
+/* Style for the links in their default state */
+.upper-text {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Create the oval hover effect */
+  .upper-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    z-index: -1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Show the oval background on hover */
+  .upper-text:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Text effect on hover */
+  .upper-text:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Active state style - you can add this class via JavaScript to the current page link */
+  .upper-text.active::before {
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(255, 255, 255, 0.25);
+  }
