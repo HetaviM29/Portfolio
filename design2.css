@@ -1,309 +1,332 @@
 .box1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box2{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .box3{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-box{
-    height: 90px;
-    width: 90px;
-    background-size: cover;
-    -webkit-filter: invert(80%); 
-    filter: invert(80%);
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  -webkit-filter: invert(80%); 
+  filter: invert(80%);
 }
 
 .social-box:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  
+-webkit-filter: invert(100%);
+filter: invert(100%);
+
+}
+
+#mail-icon {
+height: 50px;
+width: 50px;
 }
 
 .c2-box2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .tech{
-    height: 90px;
-    width: 90px;
-    border-radius: 2rem;
-    margin-top: 2rem;
-    margin-inline: 0.5rem;
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-inline: 0.5rem;
 }
 
 
 .tech-text{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 1rem;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: 25px;
+  margin-left: 30px;
+  justify-self: left;
 }
 
 /* From Uiverse.io by rishichawda */ 
 /* The switch - the box around the slider */
 #theme-toggle-button {
-    font-size: 12px;
-    display: inline-flex;
-    width: 18em;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  /* Hide default HTML checkbox */
-  #toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  #container,
-  #patches,
-  #stars,
-  #button,
-  #sun,
-  #moon,
-  #cloud {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.25s;
-  }
-  
-  /* night sky background */
-  #toggle:checked + svg #container {
-    fill: #2b4360;
-  }
-  
-  /* move button to right when checked */
-  #toggle:checked + svg #button {
-    transform: translate(28px, 2.333px);
-  }
-  
-  /* show/hide sun and moon based on checkbox state */
-  #sun {
-    opacity: 1;
-  }
-  
-  #toggle:checked + svg #sun {
-    opacity: 0;
-  }
-  
-  #moon {
-    opacity: 0;
-  }
-  
-  #toggle:checked + svg #moon {
-    opacity: 1;
-  }
-  
-  /* show or hide background items on checkbox state */
-  #cloud {
-    opacity: 1;
-  }
-  
-  #toggle:checked + svg #cloud {
-    opacity: 0;
-  }
-  
-  #stars {
-    opacity: 0;
-  }
-  
-  #toggle:checked + svg #stars {
-    opacity: 1;
-  }
-  
+  font-size: 10px;
+  display: inline-flex;
+  width: 18em;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
 
 .cv{
-    height: 50%;
-    width: 60%;
-    display: flexbox;
-    margin-top: 2rem;
-  }
+  height: 50%;
+  width: 60%;
+  display: flexbox;
+  margin-top: 2rem;
+}
 
 .placeholder{
-    height: 20px;
-    width: 60px;
-    font-size: 15px;
-    text-align: left;
-    opacity: 30%;
+  height: 20px;
+  width: 60px;
+  font-size: 15px;
+  text-align: left;
+  opacity: 30%;
+  margin-top: -15px;
 }
 
 
 .resume{
-    height: 40px;
-    width: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+  height: 40px;
+  width: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  
 }
 
 
 .dwd{
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    margin-top: 2rem;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .social-box2{
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    -webkit-filter: invert(80%); 
-    filter: invert(80%);
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  -webkit-filter: invert(80%); 
+  filter: invert(80%);
+  margin-top: -22px;
 }
 
 .social-box2:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  
+-webkit-filter: invert(100%);
+filter: invert(100%);
+
 }
 
 .exp{
-    text-align: left;
-    opacity: 35%;
-    margin-top: 2rem;
-    margin-left: 2rem;
+  text-align: left;
+  opacity: 35%;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .exp-text{
-    text-align: left;
-    margin-top: 2rem; 
-    margin-left: 2rem; 
-    margin-inline: 2rem;  
-    opacity: 85%;
+  text-align: left;
+  margin-top: 2rem; 
+  margin-left: 2rem; 
+  margin-inline: 2rem;  
+  opacity: 85%;
 }
 
 .sub-text{
-    margin-left: 31em; 
-    height: 18px;
-    opacity: 60%;
-    width:8rem;
+  margin-left: 29em; 
+  height: 18px;
+  opacity: 60%;
+  width:8rem;
 
 }
 .exp-text2{
-    text-align: left;
-    margin-left: 2rem;   
-    opacity: 40%;
+  text-align: left;
+  margin-left: 2rem;   
+  opacity: 40%;
 }
 
 .project{
-  height:60%;
-  width: 100%;
-  align-self: self-start;
-  border-radius: 1.5rem;
+height:60%;
+width: 100%;
+align-self: self-start;
+border-radius: 1.5rem;
 }
 
 
 .project2{
-  height:70%;
-  width: 100%;
-  align-self: self-start;
-  border-radius: 1.5rem;
+height:70%;
+width: 100%;
+align-self: self-start;
+border-radius: 1.5rem;
 }
 .pr-text{
-  margin-left: 1rem;
-  margin-top: 1rem;
-  opacity: 50%;
+margin-left: 1rem;
+margin-top: 1rem;
+opacity: 50%;
+font-size: 15px;
 }
 
 .pr-text2{
-  font-size: 28px;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  font-weight: bold;
+font-size: 26px;
+margin-left: 1rem;
+margin-top: 0.5rem;
+font-weight: bold;
 }
 
 .pr-text3{
-  height: 20px;
-  width: 4rem;
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-inline: 1rem;
-  margin-top: 1.5rem;
-  background-color: rgb(99, 96, 92);
-  border-radius: 0.5rem;
-  opacity: 60%;
+height: 20px;
+width: 4rem;
+display: inline-block;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-inline: 1rem;
+margin-top: 1.5rem;
+background-color: rgb(99, 96, 92);
+border-radius: 0.5rem;
+opacity: 60%;
+font-size: 13px;
+text-align: center;
+margin-right: -9px;
 }
 
 .pr-text4{
-  height: 20px;
-  width: 5rem;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin-inline: 1rem;
-  margin-top: 1.5rem;
-  background-color: rgb(99, 96, 92);
-  border-radius: 0.5rem;
-  text-align: center;
-  opacity: 60%;
+height: 20px;
+width: 5rem;
+display: inline-block;
+justify-content: center;
+align-items: center;
+margin-inline: 1rem;
+margin-top: 1.5rem;
+background-color: rgb(99, 96, 92);
+border-radius: 0.5rem;
+text-align: center;
+opacity: 60%;
+font-size: 13px;
+text-align: center;
+margin-right: -9px;
+
 }
 
 
 .pr-text5{
-  height: 20px;
-  width: 8rem;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin-inline: 1rem;
-  margin-top: 1.5rem;
-  background-color: rgb(99, 96, 92);
-  border-radius: 0.5rem;
-  text-align: center;
-  opacity: 60%;
+height: 20px;
+width: 8rem;
+display: inline-block;
+justify-content: center;
+align-items: center;
+margin-inline: 1rem;
+margin-top: 1.5rem;
+background-color: rgb(99, 96, 92);
+border-radius: 0.5rem;
+text-align: center;
+opacity: 60%;
+font-size: 13px;
+text-align: center;
+margin-right: -9px;
 }
 
 /* Make the entire boxes clickable, not just the icons */
 .box1 a, .box2 a, .box3 a, .c2-box2 a, .dwd a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
 }
 
 /* Add subtle hover effect indicator for clickable elements */
 .box1:hover, .box2:hover, .box3:hover, .c2-box2:hover, .dwd:hover {
-  cursor: pointer;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-  transform: translateY(-7px);
+cursor: pointer;
+box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+border: 1px solid rgba(138, 43, 226, 0.3);
+transform: translateY(-7px);
 }
 
 /* Add download button specific hover effect */
 .dwd:hover .social-box2 {
-  animation: bounce 0.5s ease infinite alternate;
+animation: bounce 0.5s ease infinite alternate;
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-5px);
-  }
+from {
+  transform: translateY(0);
+}
+to {
+  transform: translateY(-5px);
+}
 }
 
 /* Add transition to all clickable elements */
 .box1, .box2, .box3, .c2-box2, .dwd,
 .social-box, .social-box2 {
-  transition: all 0.3s ease;
+transition: all 0.3s ease;
 }

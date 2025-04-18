@@ -1,7 +1,7 @@
-html{
-    background: linear-gradient(-45deg, #11132c, #111927, #050d1f, #1b1f2a);
+html {
+    background: linear-gradient(-45deg, #0a0a0f, #0d0d12, #050508, #0f0f14);
     background-size: 400% 400%;
-    animation: gradientMove 5s ease infinite;
+    animation: gradientMove 15s ease infinite;
     color: white;
     font-family: 'Poppins', sans-serif;  
 }
@@ -10,8 +10,7 @@ html{
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-  }
-
+}
 .r1c1-box1 {
     transition: all 0.3s ease-in-out;
     background: rgba(255, 255, 255, 0.05);
@@ -21,7 +20,8 @@ html{
   }
   
 .r1c1-box1:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
   }
   
@@ -36,7 +36,7 @@ html{
 
 .name{
     margin-left: 1.5rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 37px;
 }
 
@@ -93,7 +93,8 @@ html{
 }
 
 .sub-row1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -134,7 +135,8 @@ html{
 }
 
 .sub-col1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -146,7 +148,8 @@ html{
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sub-col2-row1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -159,7 +162,8 @@ html{
 }
 
 .sub-col2-row2:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -172,7 +176,7 @@ html{
 }
 
 .box1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(170, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
@@ -185,7 +189,8 @@ html{
 }
 
 .box2:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -198,7 +203,8 @@ html{
 }
 
 .box3:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -211,7 +217,8 @@ html{
 }
 
 .c2-box1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -224,7 +231,8 @@ html{
 }
 
 .c2-box2:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -237,7 +245,8 @@ html{
 }
 
 .exp-box:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -250,7 +259,8 @@ html{
 }
 
 .pr-box3:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -263,7 +273,8 @@ html{
 }
 
 .pr-box4:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -276,7 +287,8 @@ html{
 }
 
 .col3-box1:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
@@ -289,7 +301,8 @@ html{
 }
 
 .col3-box2:hover{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(138, 43, 226, 0.3);
     transform: translateY(-5px);
 }
 
