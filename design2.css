@@ -28,7 +28,7 @@
 .social-box:hover {
 -webkit-filter: invert(100%);
 filter: invert(100%);
-
+cursor:crosshair;
 }
 
 #mail-icon {
@@ -182,7 +182,8 @@ width: 50px;
 .social-box2:hover {
 -webkit-filter: invert(100%);
 filter: invert(100%);
-
+cursor:crosshair;
+border: none;
 }
 
 .exp{
@@ -305,7 +306,7 @@ height: 100%;
 
 /* Add subtle hover effect indicator for clickable elements */
 .box1:hover, .box2:hover, .box3:hover, .c2-box2:hover, .dwd:hover {
-cursor: pointer;
+cursor: crosshair;
 box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
 border: 1px solid rgba(138, 43, 226, 0.3);
 transform: translateY(-7px);

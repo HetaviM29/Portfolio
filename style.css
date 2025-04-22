@@ -31,6 +31,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
+      
    }
    
    .lower-container{
@@ -42,18 +43,21 @@
    }
    
    .upper-box{
-       height: 40%;
-       width: 30%;
+       height: 35%;
+       width: 25%;
        display: flex;
        justify-content: center;
        align-items: top;
        background-color: rgb(78, 78, 78);
        text-align: center;
        border-radius: 2rem;
+       
    }
    
    .upper-box-text{
-       margin-top: 15px;
+       margin-top: 12px;
+        font-family:'Times New Roman', Times, serif
+      
    }
    
    .upper-text{
