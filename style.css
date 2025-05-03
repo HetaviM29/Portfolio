@@ -3,6 +3,7 @@
    --accent-quaternary: #4cc9f0;
    }
     
+    
    *{
        margin: 0;
        padding: 0;
@@ -232,6 +233,7 @@
    .row2-subcol2{
        height: 95%;
        width: 60%;
+    
    }   
    
    .box1{
@@ -325,7 +327,7 @@
        margin-left: 1.5rem;
    }
    
-   .pr-box4{
+    .pr-box4{
        height: 90%;
        width: 83%;
        border-radius: 2rem;

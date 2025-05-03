@@ -17,6 +17,24 @@
   align-items: center;
 }
 
+.box4{
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box4:hover{
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(137, 43, 226, 0.379);
+  transform: translateY(-5px);
+  cursor: crosshair;
+}
+
 .social-box{
   height: 70px;
   width: 70px;
@@ -199,11 +217,12 @@ border: none;
   margin-left: 2rem; 
   margin-inline: 2rem;  
   opacity: 85%;
+  font-size: 28px;
 }
 
 .sub-text{
-  margin-left: 29em; 
-  height: 18px;
+  margin-left: 25em; 
+  height: 10px;
   opacity: 60%;
   width:8rem;
 
@@ -252,10 +271,9 @@ align-items: center;
 margin-inline: 1rem;
 margin-top: 1.5rem;
 background-color: rgb(99, 96, 92);
-border-radius: 0.5rem;
+border-radius: 0.4rem;
 opacity: 60%;
 font-size: 13px;
-text-align: center;
 margin-right: -9px;
 }
 
@@ -282,7 +300,7 @@ margin-right: -9px;
 height: 20px;
 width: 8rem;
 display: inline-block;
-justify-content: center;
+justify-content:center;
 align-items: center;
 margin-inline: 1rem;
 margin-top: 1.5rem;
@@ -296,7 +314,7 @@ margin-right: -9px;
 }
 
 /* Make the entire boxes clickable, not just the icons */
-.box1 a, .box2 a, .box3 a, .c2-box2 a, .dwd a {
+.box1 a, .box2 a, .box3 a, .box4 a, .c2-box2 a, .dwd a {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -305,7 +323,7 @@ height: 100%;
 }
 
 /* Add subtle hover effect indicator for clickable elements */
-.box1:hover, .box2:hover, .box3:hover, .c2-box2:hover, .dwd:hover {
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .c2-box2:hover, .dwd:hover {
 cursor: crosshair;
 box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
 border: 1px solid rgba(138, 43, 226, 0.3);
@@ -327,7 +345,7 @@ to {
 }
 
 /* Add transition to all clickable elements */
-.box1, .box2, .box3, .c2-box2, .dwd,
+.box1, .box2, .box3, .box4, .c2-box2, .dwd,
 .social-box, .social-box2 {
 transition: all 0.3s ease;
 }
