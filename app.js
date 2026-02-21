@@ -60,7 +60,7 @@ function App() {
             <a className="gradient-btn" href="#portfolio">Portfolio <i className="fa-regular fa-circle-right"></i></a>
           </div>
           <div className="hero-photo-wrap">
-            <img src="images/profile2.jpeg" alt="Hetavi Modi" className="hero-photo" />
+            <img src="images/Profile Img.jpeg" alt="Hetavi Modi" className="hero-photo" />
           </div>
         </section>
 
