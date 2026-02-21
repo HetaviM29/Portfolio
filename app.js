@@ -23,15 +23,25 @@ const experienceCards = [
 ];
 
 function App() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+  
   return (
     <>
       <header className="topbar">
         <div className="topbar-inner">
           <h1 className="logo">Hetavi Modi</h1>
-          <nav>
+          <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+          </button>
+          <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
             <ul className="menu">
               {navLinks.map((link) => (
-                <li key={link.id}><a href={`#${link.id}`}>{link.label}</a></li>
+                <li key={link.id}><a href={`#${link.id}`} onClick={closeMenu}>{link.label}</a></li>
               ))}
             </ul>
           </nav>
@@ -56,7 +66,10 @@ function App() {
       <main>
         <section id="home" className="hero panel">
           <div className="hero-text">
-            <h2>Welcome to my Website, here&apos;s who I am and what I do</h2>
+            <div className="welcome-header">
+              <img src="images/Profile Img.jpeg" alt="Hetavi" className="welcome-profile-icon" />
+              <h2>Welcome to my Website, here&apos;s who I am and what I do</h2>
+            </div>
             <p>
               I&apos;m currently pursuing a B.E. in Computer Science at Sinhgad Academy of Engineering.
               With hands-on experience in <strong>MERN stack</strong>, <strong>AI/ML</strong>, and <strong>AWS cloud</strong>,
@@ -140,8 +153,27 @@ function App() {
               <i className="fa-solid fa-download"></i> Download Resume
             </a>
           </div>
+          
+          <div className="mobile-social">
+            <p>Connect with me</p>
+            <div className="mobile-social-links">
+              <a href="https://www.linkedin.com/in/hetavi-modi-68a9ab290/" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/HetaviM29" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:hetavimodi29@gmail.com">
+                <i className="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+          </div>
         </section>
       </main>
+      
+      <footer className="footer">
+        <p>&copy; 2025 Hetavi Modi. All rights reserved.</p>
+      </footer>
     </>
   );
 }
