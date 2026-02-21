@@ -6,18 +6,20 @@ const navLinks = [
 ];
 
 const projectCards = [
-  { title: 'AI-Powered Phishing Detection SaaS', image: 'images/ABP.png' },
-  { title: 'Student Management System', image: 'images/nda project.png' },
-  { title: 'Patient Health Record Platform', image: 'images/EHR.png' }
+  { title: 'AI-Powered Phishing Detection System (SaaS)', subtitle: 'ML & Cybersecurity', image: 'images/ai-phishing.png', url: 'https://github.com/HetaviM29/AI-resistent-Phishing-and-deception-framework' },
+  { title: 'Student Management System', subtitle: 'MERN Stack', image: 'images/nda project.png', url: 'https://www.nrutyashreedanceacademy.in/' },
+  { title: 'Patient Health Record (PHR) System', subtitle: 'MERN Stack', image: 'images/EHR.png', url: 'https://github.com/HetaviM29/EHR-System' }
 ];
 
 const experienceCards = [
-  { title: 'AI Web Developer Intern', subtitle: 'WhiteCode Technology Solutions', image: 'images/react.jpeg' },
-  { title: 'AWS Intern', subtitle: 'EC2 • S3 • DynamoDB • Lambda', image: 'images/nodejs.jpeg' },
-  { title: 'Data Analytics Intern', subtitle: 'Power BI Dashboards', image: 'images/python.jpeg' },
-  { title: 'MERN Development', subtitle: 'React • Node • MongoDB', image: 'images/mongodb.jpeg' },
-  { title: 'Cloud Deployment', subtitle: 'Scalable Full-Stack Delivery', image: 'images/java.jpeg' },
-  { title: 'Technical Leadership', subtitle: 'FESA • ACES • Tectonic', image: 'images/github-removebg-preview.png' }
+  { title: 'AI Web Developer Intern', subtitle: 'WhiteCode Technology Solutions', image: 'images/ai-web-developer.jpg' },
+  { title: 'AWS Intern', subtitle: 'TechEasy Consultancy', image: 'images/aws-intern.jfif' },
+  { title: 'Data Analytics & Power BI Intern', subtitle: 'Vodafone Idea Foundation', image: 'images/data-analytics-and-powerbi.png' },
+  { title: 'Vice President - FESA', subtitle: 'First Year Student Association', image: 'images/vp-logo.avif' },
+  { title: 'MERN Stack', subtitle: 'React • Node • MongoDB', image: 'images/mern.png' },
+  { title: 'Languages', subtitle: 'C++ • Python • Java • JavaScript', image: 'images/langauges.png' },
+  { title: 'Event Head - Techtonic', subtitle: 'National-Level Techfest', image: 'images/event-head.png' },
+  { title: 'ACES Member', subtitle: 'Computer Engineering Association', image: 'images/aces.png' }
 ];
 
 function App() {
@@ -37,10 +39,18 @@ function App() {
       </header>
 
       <aside className="social-bar">
-        <a href="https://www.linkedin.com/in/hetavi-modi-68a9ab290/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/HetaviM29" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-        <a href="mailto:hetavimodi29@gmail.com"><i className="fa-regular fa-envelope"></i></a>
-        <a href="https://hetavimodi-portfolio.vercel.app/" target="_blank" rel="noreferrer"><i className="fa-solid fa-globe"></i></a>
+        <a href="https://www.linkedin.com/in/hetavi-modi-68a9ab290/" target="_blank" rel="noreferrer" className="social-link">
+          <i className="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/HetaviM29" target="_blank" rel="noreferrer" className="social-link">
+          <i className="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:hetavimodi29@gmail.com" className="social-link">
+          <i className="fa-regular fa-envelope"></i>
+          <span>Email</span>
+        </a>
       </aside>
 
       <main>
@@ -69,10 +79,15 @@ function App() {
           <p className="section-subtitle">Check out some of my work</p>
           <div className="grid three">
             {projectCards.map((card) => (
-              <article className="card" key={card.title}>
-                <img src={card.image} alt={card.title} />
-                <div className="card-body"><h4>{card.title}</h4></div>
-              </article>
+              <a href={card.url} target="_blank" rel="noreferrer" className="card-link" key={card.title}>
+                <article className="card">
+                  <img src={card.image} alt={card.title} />
+                  <div className="card-body">
+                    <h4>{card.title}</h4>
+                    {card.subtitle && <p>{card.subtitle}</p>}
+                  </div>
+                </article>
+              </a>
             ))}
           </div>
         </section>
@@ -80,28 +95,51 @@ function App() {
         <section id="experience" className="panel section-block">
           <h3 className="section-title">Experience</h3>
           <p className="section-subtitle">Roles & technologies I&apos;ve worked with</p>
-          <div className="grid three">
+          <div className="grid four exp-grid">
             {experienceCards.map((card) => (
-              <article className="card mini" key={card.title}>
-                <img src={card.image} alt={card.title} />
-                <div className="card-body">
-                  <h4>{card.title}</h4>
-                  <p>{card.subtitle}</p>
+              <div className="exp-item" key={card.title}>
+                <div className="exp-card">
+                  <img src={card.image} alt={card.title} />
                 </div>
-              </article>
+                <p className="exp-label">{card.title}</p>
+                {card.subtitle && <p className="exp-subtitle">{card.subtitle}</p>}
+              </div>
             ))}
           </div>
         </section>
 
         <section id="contact" className="panel section-block">
           <h3 className="section-title">Contact</h3>
-          <p className="section-subtitle">Submit the form below to get in touch with me!</p>
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Enter your name" />
-            <input type="email" placeholder="Enter your email" />
-            <textarea rows="7" placeholder="Enter your message"></textarea>
-            <button type="submit" className="gradient-btn">Let&apos;s connect!</button>
-          </form>
+          <p className="section-subtitle">Get in touch with me!</p>
+          
+          <div className="contact-info">
+            <a href="tel:+919529623267" className="contact-item">
+              <div className="contact-icon">
+                <i className="fa-solid fa-phone"></i>
+              </div>
+              <div className="contact-details">
+                <span className="contact-label">Phone</span>
+                <span className="contact-value">+91 9529623267</span>
+              </div>
+            </a>
+            
+            <a href="mailto:hetavimodi29@gmail.com" className="contact-item">
+              <div className="contact-icon">
+                <i className="fa-solid fa-envelope"></i>
+              </div>
+              <div className="contact-details">
+                <span className="contact-label">Email</span>
+                <span className="contact-value">hetavimodi29@gmail.com</span>
+              </div>
+            </a>
+          </div>
+          
+          <div className="resume-download">
+            <p>Want to know more about me?</p>
+            <a href="files/Hetavi Modi Resume Nov 2025.pdf" download className="gradient-btn download-btn">
+              <i className="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
         </section>
       </main>
     </>
