@@ -8,7 +8,9 @@ const navLinks = [
 const projectCards = [
   { title: 'AI-Powered Phishing Detection System (SaaS)', subtitle: 'ML & Cybersecurity', image: 'images/ai-phishing.png', url: 'https://github.com/HetaviM29/AI-resistent-Phishing-and-deception-framework' },
   { title: 'Student Management System', subtitle: 'MERN Stack', image: 'images/nda project.png', url: 'https://www.nrutyashreedanceacademy.in/' },
-  { title: 'Patient Health Record (PHR) System', subtitle: 'MERN Stack', image: 'images/EHR.png', url: 'https://github.com/HetaviM29/EHR-System' }
+  { title: 'Patient Health Record (PHR) System', subtitle: 'MERN Stack', image: 'images/EHR.png', url: 'https://github.com/HetaviM29/EHR-System' },
+  { title: 'Health Trend Analyzer', subtitle: 'Data Science & Visualization', image: 'images/health_trends.jpg', url: 'https://github.com/HetaviM29/ent-trend-analyzer' },
+  { title: 'Live Portfolio', subtitle: 'React & Deployment', image: 'images/live_portfolio.png', url: 'https://live-portfolio-1.onrender.com/' }
 ];
 
 const experienceCards = [
@@ -149,7 +151,7 @@ function App() {
           
           <div className="resume-download">
             <p>Want to know more about me?</p>
-            <a href="files/Hetavi Modi Resume Nov 2025.pdf" download className="gradient-btn download-btn">
+            <a href="files/Hetavi_Resume May_2026.pdf" download className="gradient-btn download-btn">
               <i className="fa-solid fa-download"></i> Download Resume
             </a>
           </div>
